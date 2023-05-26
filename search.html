@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AlejoMunoz">
+    <meta name="description" content="Restaurans">
+    <meta name="keywords" content="Cocina, restaurante, alimentos, eventos">
+    <!--Titulo-->
+    <title>Restaurans</title>
+    <!--Añadir Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Añadir archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--personalizar tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#"> <img src="img/logo_restaurans.png" width="200"
+                        alt="Logo del restaurante"></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Restaurans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="search.html">Search </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new.html">New</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--buscar restaurantes-->
+    <label for="restauranteBuscar" class="form-label">Buscar resturante:</label>
+    <input class="form-control" list="datalistOptions" id="restauranteBuscar"
+        placeholder="Busca el restaurante de tu preferencia...">
+    <datalist id="datalistOptions">
+        <option value="Italiano">
+        <option value="Mexicano">
+        <option value="Arabe">
+        <option value="Vegano">
+        <option value="Barbacue">
+        <option value="Mar">
+    </datalist>
+    <button type="button" class="btn btn-info">Buscar <i
+        class="bi bi-arrow-right-circle-fill"></i></button>
+
+    <!-- Seccion restaurantes-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Restaurantes</h2>
+        <h3 class="seccion-descripcion">Estos son algunos restaurantes recientes</h3>
+        <!--Galeria de restaurantes-->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!--restaurante 1-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/barbacoa.jpg" alt="logo de restaurante BBQ">
+                        <div class="overlay">
+                            <p>Grills barbacue <br> barrio oblero <br>Deliciosa comida barbacue</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--restaurante 2-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/mexicano.jpg" alt="logo de restaurante mexicano">
+                        <div class="overlay">
+                            <p>Antojitos mexicanos <br> Calle 5G provenza <br> Deliciosa comida mexicana</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--restaurante 3-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/vegano.jpg" alt="logo de restaurante vegano">
+                        <div class="overlay">
+                            <p>Restauran 100% natural <br>Parque de envigado <br>Deliciosa comida vegana</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--restaurante 4-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/italiano.jpg" alt="logo de restaurante italiano">
+                        <div class="overlay">
+                            <p>Doble cheese <br>Barrio laureles <br>Deliciosa comida italiana</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--restaurante 5-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/mar.jpg" alt="logo de restaurante de mar">
+                        <div class="overlay">
+                            <p>Red crawfish <br>Barrio cabañas <br>Deliciosa comida de mar</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--restaurante 6-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/arabe.jpg" alt="logo de restaurante arabe">
+                        <div class="overlay">
+                            <p>Radaman kareem <br>Barrio lleras <br>Deliciosa comida arabe</p>
+                            <div class="iconos-contenedor">
+                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-camera2"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.tripadvisor.co/Restaurants-g297478-Medellin_Antioquia_Department.html" target="_blank"
+            rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Ver más restaurantes <i
+                    class="bi bi-arrow-right-circle-fill"></i></button>
+        </a>
+    </section>
+
+      <!-- Pie de pagina (footer)-->
+      <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo " src="img/logo_restaurans.png" alt="Logo del restaurante">
+        <p class="footer-texto text-center"> Aqui puedes evidendeciar algunos resturantes.<br> Crea tu propio restaurante.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor"> Desarrollado Por AlejoMunoz &#169; (2023) </div>
+    </footer>
+    <!--Añadir Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
