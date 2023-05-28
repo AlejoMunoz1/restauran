@@ -167,11 +167,11 @@ footer{
 /* Adaptable (Responsivo)*/
 @media screen and (max-width: 400px){
     .overlay p{
-        font-size: 18px;
+        font-size: 10px;
     }
 
     .overlay i{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
